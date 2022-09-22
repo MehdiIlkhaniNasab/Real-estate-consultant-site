@@ -1,0 +1,74 @@
+/* COLORS OF HEADINGS */
+
+.u-heading--light{
+    color: var(--color-primary);    
+}
+.u-heading--white{
+    color: var(--color-white);   
+    font-weight: 400; 
+}
+
+.u-heading--dark{
+    color: var(--color-gray-dark-1);    
+}
+
+
+/* STYLE OF HEADING AND PARAGRAPH */
+.u-heading-1{
+    font-size: 3rem;
+    color: var(--color-white);
+}
+.u-heading-3{
+    font-size: 2rem;
+}
+
+.u-heading-2{
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.u-paragraph{
+    font-size: 1.5rem;
+}
+
+
+/* MARGIN BOTTOM */
+
+.u-mb-small{
+    margin-bottom: 2rem;
+}
+.u-mb-medium{
+    margin-bottom: 3rem;
+}
+.u-mb-large{
+    margin-bottom: 4rem;
+}
+.u-mb-xlarg{
+    margin-bottom: 8rem;
+}
+
+
+/* MARGIN Y DIRECTION */
+.u-my-small{
+    margin: 1rem 0;
+}
+.u-my-medium{
+    margin: 2rem 0;
+}
+.u-my-large{
+    margin: 3rem 0;
+}
+.u-my-xlarg{
+    margin: 6rem 0;
+}
+
+@media only screen and (max-width: 56.25em ) {
+    .u-heading-3{
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width: 37.5em ) {
+    .u-heading-3{
+        font-size: 1.5rem;
+    }
+}

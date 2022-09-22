@@ -1,0 +1,151 @@
+.sidebar {
+    background-color: var(--color-primary);
+    grid-row: 1 / -1;
+    grid-column: sidebar-start / sidebar-end;
+}
+
+.sidebar__input {
+    display: none;
+}
+
+
+
+.sidebar__label{
+    display: inline-block;
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 40;
+}
+
+.sidebar__btn {
+    width: 3.5rem;
+    height: 2px;
+    background-color: var(--color-white);
+    position: relative;
+    transition: all 0.4s;
+}
+
+.sidebar__btn::before {
+    content: '';
+    display: inline-block;
+    width: 3.5rem;
+    height: 2px;
+    background-color: var(--color-white);
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    transition: all 0.4s;
+}
+
+.sidebar__btn::after {
+    content: '';
+    display: inline-block;
+    width: 3.5rem;
+    height: 2px;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    transition: all 0.4s;
+}
+
+
+.sidebar__bg{
+    width: 5vw;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    background-color: var(--color-secondry);
+    transform: scale(0);
+    transition: width 0.6s, height 0.6s ,transform 0.4s;
+}
+
+.list{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform:translate(-25%, -50%) ;
+    width: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    transition: opacity 0.6s, width 0.8s ,transform 0.6s;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.list__item{
+    padding: 1rem;
+    background-color: var(--color-primary);
+    width: 15rem;
+    height: 4rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list__link{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.7rem;
+}
+.sidebar__input:checked ~ .sidebar__bg{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    z-index: 30;    
+}
+
+
+.sidebar__input:checked + .sidebar__label .sidebar__btn{
+    height: 0;
+}
+.sidebar__input:checked + .sidebar__label .sidebar__btn::before{
+    top: 0;
+    transform:rotate(-45deg) ;
+}
+.sidebar__input:checked + .sidebar__label .sidebar__btn::after{
+    top: 0;
+    transform:rotate(45deg) ;
+}
+.sidebar__input:checked ~ .list{
+    opacity: 1;
+    width: 50%;
+    visibility: visible;
+    z-index: 35;
+    transform:translate(-50%, -50%) ;
+
+}
+
+
+
+@media only screen and (max-width: 75em ) {
+    .sidebar{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .sidebar__label{
+        justify-content: flex-start;
+        margin-right: 1.5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 37.5em) {
+    .list{
+        top: 5%;
+    }
+}

@@ -1,0 +1,62 @@
+.real-tors{
+    background-color: var(--color-secondry);
+    grid-column: col-start 7 / full-end ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem ;
+}
+
+.real-tors__tittle{
+    font-size: 2.3rem;
+    color: var(--color-primary);
+}
+
+.real-tors__list{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2.5rem;
+    align-items: center;
+}
+
+.real-tors__img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.real-tors__text{
+    font-size: 1.2rem;
+    color: var(--color-gray-light-2);
+}
+
+@media only screen and (max-width: 48em) {
+    .real-tors{
+        grid-column: full-start  / full-end ;
+        grid-row: 3 / 4;
+        padding: 4rem 0;
+    }
+
+    .real-tors__list{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .real-tors__details{
+        margin-left: 2.5rem;
+    }
+}
+@media only screen and (max-width: 37.5em) {
+    .real-tors__list{
+        flex-direction: column;
+        text-align: center;        
+    }
+    .real-tors__details{
+        margin-left: 0;
+    }
+}

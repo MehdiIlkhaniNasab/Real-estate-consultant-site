@@ -1,0 +1,15 @@
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-family: var(--font-primary);
+    font-size: var(--font-size-default);
+}
+
+@media only screen and (max-width: 75em ) {
+    html{
+        font-size: 50%;
+    }
+}

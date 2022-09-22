@@ -1,0 +1,72 @@
+.header {
+    background-image: linear-gradient(var(--color-secondry-light), var(--color-secondry-light)), url(../../img/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column: full-start / col-end 6;
+    padding: 8rem;
+    display: grid;
+    grid-template-rows: 1fr min-content 1fr 1fr;
+    grid-row-gap: 1.5rem;
+}
+
+.header__logo {
+    width: 15rem;
+    height: 4rem;
+    justify-self: center;
+    align-items: start;
+}
+
+
+.seeon__text {
+    font-size: 1.8rem;
+    color: var(--color-gray-light-2);
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    grid-column-gap: 1.5rem;
+}
+
+.seeon__text::before,
+.seeon__text::after {
+    content: '';
+    height: 1px;
+    background-color: currentColor;
+    display: block;
+}
+
+.seeon__box-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.seeon__img {
+    width: 10rem;
+    height: 4rem;
+    filter: brightness(70%);
+}
+
+
+@media only screen and (max-width: 48em) {
+
+    .header {
+        grid-column: full-start / full-end;
+        padding: 4rem;
+        grid-row-gap: 2.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 31.25em) {
+
+    .header {
+
+        grid-row-gap: 3.5rem;
+    }
+
+    .seeon__text,
+    .seeon__box-img{
+        display: none;
+    }
+}

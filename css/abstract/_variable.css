@@ -1,0 +1,36 @@
+:root{
+
+
+    /* COLORS */
+    --color-white: #fff;
+    --color-primary: #c69963;
+    --color-primary-dark: #b28451;
+
+    --color-secondry: #101d2c;
+    --color-secondry-light: #101d2cef;
+
+    --color-gray-light-1: #f9f7f6;
+    --color-gray-light-2: #aaa;
+
+    --color-gray-dark-1: #54483a;
+    --color-gray-dark-2: #6d5d4b;
+
+
+    /* FONTS  */
+
+    --font-primary: 'gandom', 'koodak';
+    --font-secondry: 'nazanin', 'yekan';
+    --font-size-default: 16px;
+}
+
+
+/* SIZE OF RESPONSSIVE
+
+SMALL-PHONE: 500PX   31.25em;
+PHONE: 600PX   37.5em;
+TAB-PORT: 768PX  48em;
+TAB-LAND: 900PX   56.25em;
+NORMAL DEKTOP: 1200PX   75em;
+BIG DESKTOP: 1800;
+
+*/

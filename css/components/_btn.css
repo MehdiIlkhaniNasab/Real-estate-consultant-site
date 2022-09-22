@@ -1,0 +1,23 @@
+.btn{
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--color-primary-dark);
+    outline: none;
+    border: none;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+
+.btn-brown{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: bold;
+}
+.btn-brown:hover{
+    background-color: var(--color-primary-dark);
+}

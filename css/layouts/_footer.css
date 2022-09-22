@@ -1,0 +1,4 @@
+.footer{
+    background-color: var( --color-secondry);
+    grid-column: full-start / full-end;
+}

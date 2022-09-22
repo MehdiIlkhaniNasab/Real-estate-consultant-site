@@ -1,0 +1,45 @@
+/* ABTSTRACT CSS */
+@import 'abstract/_variable.css';
+
+
+/* BASE CSS */
+@import 'base/_animations.css';
+@import 'base/_font-face.css';
+@import 'base/_typographi.css';
+@import 'base/_utilities.css';
+
+
+/* COMPONENTS */
+@import 'components/_btn.css';
+@import 'components/_card.css';
+@import 'components/_container.css';
+@import 'components/_nav.css';
+
+
+
+/* LAYOUTS CSS */
+@import 'layouts/_featurs.css';
+@import 'layouts/_footer.css';
+@import 'layouts/_gallery.css';
+@import 'layouts/_header.css';
+@import 'layouts/_homes.css';
+@import 'layouts/_real-tors.css';
+@import 'layouts/_sidebar.css';
+@import 'layouts/_story.css';
+
+
+/* PAGES CSS */
+@import 'pages/_home.css';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-white);
+    min-height: 100vh;
+    max-width: 100%;
+}
